@@ -53,6 +53,7 @@ margin: 20px 0;
 justify-content: space-between;
 border-bottom: 1px dashed grey;
 padding: 20px 0;
+text-align: left;
 }
 
 .city:last-child{
