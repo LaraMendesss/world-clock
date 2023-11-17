@@ -4,24 +4,26 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css"/>
+
    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.4/moment.min.js"></script>
    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment-timezone/0.5.43/moment-timezone-with-data-1970-2030.min.js"></script>
+
     <title>World Clock - Lara Mendes</title>
 </head>
 <body>
     <div class="container"> 
     <h1>World Clocks</h1>
-    <select>
+    <select id="city">
 <option value="">Select a city</option>
-<option value="">New York</option>
-<option value="">Punta Cana</option>
-<option value="">Lisbon</option>
+<option value="America/New_York">New York</option>
+<option value="America/Santo_Domingo">Punta Cana</option>
+<option value="Europe/Lisbon">Lisbon</option>
 
     </select>
-
-<div class="city" id="miami">
+<div id="cities">
+<div class="city" id="recife">
     <div>
-<h2>Miami  ☀️</h2>
+<h2>Recife  ☀️</h2>
 <div class="date"></div>
 </div>
 <div class="time"> <small>AM</small></div>
@@ -37,7 +39,7 @@
 
 
 </div>
-
+</div>
 </div>
     <footer>This project was coded by <strong>Lara Mendes</strong> and is open sourced in <a href="https://github.com/LaraMendesss/world-clock" target="_blank">GitHub</a> 💙</footer>
 
