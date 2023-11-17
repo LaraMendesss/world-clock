@@ -24,6 +24,9 @@ londonTimeElement.innerHTML=moment().tz("Europe/London").format("h:mm:ss [<small
 
 function updateCity(event){
     let cityTimeZone = event.target.value;
+    if(cityTimeZone==="current"){
+        cityTimeZone = moment.tz.guess();
+    }
  
     if (cityTimeZone!== "America/Santo_Domingo"){
 
